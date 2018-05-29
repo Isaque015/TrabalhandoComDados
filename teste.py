@@ -21,7 +21,6 @@ money = arquivo.add_format({'num_format': '$###,######0'})
 
 
 for c, item in enumerate(dic):
-    
     planilha.write(linha, c+1, item, bold)
 
     for lin, i in enumerate(dic[item]):
@@ -29,8 +28,7 @@ for c, item in enumerate(dic):
             planilha.write(lin+2, c+1, float(i), money)
         else:
             planilha.write(lin+2, c+1, i)
-        
-           
+
+
 
 arquivo.close()
-
